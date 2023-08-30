@@ -31,7 +31,6 @@
     - name: 4. Файл для ключа
       file:
         path: /home/cloudru/.ssh/authorized_keys
-        state: directory
         owner: cloudru
         group: cloudru
         mode: 750
