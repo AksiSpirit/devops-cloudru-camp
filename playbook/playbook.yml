@@ -5,7 +5,7 @@
     - name: 1. Создать пользователя cloudru
       user:
         name: cloudru
-        password: 'cloudpass'
+        password: {{ 'cloudpass' | password_hash('sha512', 'r@nd0ms@1t') }}
 
     - name: 2. Разрешить вход по ключу
       lineinfile:
