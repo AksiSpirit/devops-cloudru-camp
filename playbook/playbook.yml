@@ -27,7 +27,7 @@
         state: present
 
     - name: 4.1 Ключ
-      ansible.builtin.file:
+      file:
         path: /home/cloudru/.ssh/authorized_keys
         state: directory
         owner: cloudru
