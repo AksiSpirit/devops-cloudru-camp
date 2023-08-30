@@ -3,8 +3,9 @@
   connection: local
   tasks:
     - name: 1. Создать пользователя cloudru
-      user: cloudru
-      password: 'cloudpass'
+      ansible.builtin.user:
+        name: cloudru
+        password: 'cloudpass'
 
     - name: 2. Разрешить вход по ключу
       lineinfile:
